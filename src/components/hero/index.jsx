@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import H1 from "../shared/H1";
 import Button from "../shared/Button";
 
 const Hero = ({ heading, subHeading, description, heroImage }) => {
@@ -9,7 +10,7 @@ const Hero = ({ heading, subHeading, description, heroImage }) => {
         <div className="d-flex">
           <div className="hero-block">
             <div className="content-block-hero">
-              <h1>{heading}</h1>
+              <H1 content={heading} />
               <p>{description}</p>
             </div>
           </div>

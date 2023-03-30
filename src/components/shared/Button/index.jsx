@@ -9,6 +9,7 @@ function Button({ content, link, variant, style }) {
         variant === "primary" ? " bg-first third" : ""
       }`}
       target="_blank"
+      rel="noreferrer"
       style={style}
     >
       {content}

@@ -13,6 +13,19 @@ const Hero = ({ heading, subHeading, description, heroImage }) => {
             <div className="content-block-hero">
               <H1 content={heading} />
               <P content={description} variant="hero" />
+              <div className="btn-wrap-hero">
+                <Button
+                  content="Join Waitlist"
+                  link="https://app.talenlio.com/auth/user-type"
+                  variant="primary"
+                />
+                <Button
+                  content="Watch Video"
+                  link="https://youtu.be/axjp1bjy5eI"
+                  variant="secondary"
+                  style={{ marginLeft: "22px" }}
+                />
+              </div>
             </div>
           </div>
           <div className="hero-image-wrap">

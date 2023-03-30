@@ -45,3 +45,16 @@
   vertical-align: middle;
   display: inline-block;
 }
+
+.btn-wrap-hero {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-top: 35px;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}

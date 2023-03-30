@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.css";
-// use link function of react
 
 function Button({ content, link, variant, style }) {
   return (

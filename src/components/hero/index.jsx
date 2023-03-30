@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
-import H1 from "../shared/H1";
+import H1 from "../shared/h1";
+import P from "../shared/p";
 import Button from "../shared/Button";
 
 const Hero = ({ heading, subHeading, description, heroImage }) => {
@@ -11,7 +12,7 @@ const Hero = ({ heading, subHeading, description, heroImage }) => {
           <div className="hero-block">
             <div className="content-block-hero">
               <H1 content={heading} />
-              <p>{description}</p>
+              <P content={description} variant="hero" />
             </div>
           </div>
           <div className="hero-image-wrap">

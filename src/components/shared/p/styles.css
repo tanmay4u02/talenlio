@@ -1,0 +1,29 @@
+.paragraph-hero {
+  max-width: 490px;
+  font-family: "Didact Gothic", sans-serif;
+  color: #546681;
+  font-size: 20px;
+  line-height: 1.7;
+  font-style: normal;
+}
+
+.paragraph-standard {
+  max-width: 600px;
+  margin-bottom: 0;
+  font-family: "Didact Gothic", sans-serif;
+  color: #67718e;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.paragraph {
+  max-width: 490px;
+  font-family: "Didact Gothic", sans-serif;
+  color: #546681;
+  font-size: 20px;
+  line-height: 1.6;
+  font-style: normal;
+  font-weight: 400;
+}

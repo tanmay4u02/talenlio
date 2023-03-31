@@ -1,8 +1,8 @@
 import React from "react";
 import "./styles.css";
 
-const Heading = ({ content, variant }) => {
-  return <h2 className={variant}>{content}</h2>;
+const Heading = ({ children, variant }) => {
+  return <h2 className={variant}>{children}</h2>;
 };
 
 Heading.defaultProps = {

@@ -12,7 +12,7 @@ const Hero = ({ heading, subHeading, description, heroImage }) => {
           <div className="hero-block">
             <div className="content-block-hero">
               <H1 content={heading} />
-              <P content={description} variant="paragraph-hero" />
+              <P variant="paragraph-hero">{description}</P>
               <div className="btn-wrap-hero">
                 <Button
                   content="Join Waitlist"

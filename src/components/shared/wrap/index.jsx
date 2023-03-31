@@ -1,10 +1,10 @@
 import React from "react";
 import "./styles.css";
 
-const Wrap = ({ childre, variant, sx }) => {
+const Wrap = ({ children, variant, sx }) => {
   return (
-    <div className="wrap title" style={sx}>
-      Wrap
+    <div className={`wrap ${variant}`} style={sx}>
+      {children}
     </div>
   );
 };

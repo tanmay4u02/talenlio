@@ -16,17 +16,17 @@
   align-items: center;
 }
 
-.section .content {
+.section.section-content {
   padding: 120px 5% 64px;
 }
 
-.section .blog {
+.section.section-blog {
   min-height: auto;
   margin-top: auto;
   padding: 72px 5%;
 }
 
-.section .content-large {
+.section.content-large {
   position: relative;
   display: flex;
   overflow: hidden;

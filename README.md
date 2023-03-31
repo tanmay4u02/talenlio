@@ -1,4 +1,8 @@
-The site is deployed on this link [talenlio-tanmay.netlify.app](https://talenlio-tanmay.netlify.app/)
+#Remaining Things (Components)
+home last 3 sections
+plans component
+join waitlist section - last
+footer socials
 
 # Getting Started with Create React App
 

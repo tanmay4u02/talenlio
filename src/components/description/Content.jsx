@@ -1,8 +1,8 @@
 import "./styles.css";
-import P from "../../../components/shared/p";
-import Heading from "../../../components/shared/heading";
-import Button from "../../../components/shared/button";
-import Wrap from "../../../components/shared/wrap";
+import P from "../shared/p";
+import Heading from "../shared/heading";
+import Button from "../shared/button";
+import Wrap from "../shared/wrap";
 
 const Content = ({ index, heading, description, link, side }) => {
   return (

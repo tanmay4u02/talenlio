@@ -9,4 +9,8 @@ const Wrap = ({ children, variant, sx }) => {
   );
 };
 
+Wrap.defaultProps = {
+  variant: "wrap-title",
+};
+
 export default Wrap;

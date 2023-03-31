@@ -1,0 +1,33 @@
+.image-block {
+  position: relative;
+  display: flex;
+  width: 50%;
+  min-height: 350px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-wrap-reversed {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 140px;
+  flex-direction: row-reverse;
+}
+
+.descr-img {
+  max-width: 80%;
+}
+
+.content-block {
+  display: flex;
+  width: 50%;
+  min-height: 350px;
+  align-items: center;
+}
+.content-block.left {
+  padding: 25px 55px 25px 10px;
+}
+.content-block.right {
+  padding: 25px 25px 25px 55px;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-function Button({ content, link, variant, style }) {
+function Button({ content, link, variant, sx }) {
   return (
     <a
       href={link}
@@ -10,7 +10,7 @@ function Button({ content, link, variant, style }) {
       }`}
       target="_blank"
       rel="noreferrer"
-      style={style}
+      style={sx}
     >
       {content}
     </a>

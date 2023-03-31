@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../../components/hero";
 import HeroImage from "./assets/job-interview.svg";
+import Description from "./description/Description";
 import Services from "./Services";
 
 function Home() {
@@ -13,6 +14,7 @@ function Home() {
         heroImage={HeroImage}
       />
       <Services />
+      <Description />
     </>
   );
 }

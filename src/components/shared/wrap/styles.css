@@ -8,3 +8,8 @@
   align-items: center;
   text-align: center;
 }
+
+.wrap.wrap-content {
+  position: relative;
+  max-width: none;
+}

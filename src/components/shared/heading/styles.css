@@ -1,0 +1,16 @@
+.heading-primary {
+  max-width: 500px;
+  margin: 0 auto 20px;
+  font-family: Jost, sans-serif;
+  color: #1a3066;
+  font-size: 38px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary.h3-centre {
+  max-width: 700px;
+  font-weight: 600;
+  text-align: center;
+}

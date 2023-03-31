@@ -5,7 +5,7 @@ function Button({ content, link, variant, style }) {
   return (
     <a
       href={link}
-      className={`button first${
+      className={`button first ${
         variant === "primary" ? " bg-first third" : ""
       }`}
       target="_blank"
@@ -16,5 +16,9 @@ function Button({ content, link, variant, style }) {
     </a>
   );
 }
+
+Button.defaultProps = {
+  variant: "secondary",
+};
 
 export default Button;

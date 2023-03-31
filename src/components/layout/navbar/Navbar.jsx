@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "../../../media/logo.svg";
 import "./styles.css";
-import Button from "../../shared/Button";
+import Button from "../../shared/button";
 
 function Navbar() {
   return (

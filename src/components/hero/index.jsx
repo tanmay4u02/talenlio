@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 import H1 from "../shared/h1";
 import P from "../shared/p";
-import Button from "../shared/Button";
+import Button from "../shared/button";
 
 const Hero = ({ heading, subHeading, description, heroImage }) => {
   return (
@@ -12,7 +12,7 @@ const Hero = ({ heading, subHeading, description, heroImage }) => {
           <div className="hero-block">
             <div className="content-block-hero">
               <H1 content={heading} />
-              <P content={description} variant="hero" />
+              <P content={description} variant="paragraph-hero" />
               <div className="btn-wrap-hero">
                 <Button
                   content="Join Waitlist"
@@ -22,7 +22,6 @@ const Hero = ({ heading, subHeading, description, heroImage }) => {
                 <Button
                   content="Watch Video"
                   link="https://youtu.be/axjp1bjy5eI"
-                  variant="secondary"
                   style={{ marginLeft: "22px" }}
                 />
               </div>

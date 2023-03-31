@@ -1,36 +1,36 @@
 import React from "react";
 import Hero from "../../components/hero";
-import HeroImage from "./assets/candidates.svg";
+import HeroImage from "./assets/global-online-education.svg";
 import Description from "../../components/description/Description";
 
-import serviceImage from "./assets/frame-11604.svg";
-import first from "./assets/group-11376.svg";
-import second from "./assets/group-11378.svg";
-import third from "./assets/group-11380.svg";
+import serviceImage from "./assets/sdsa.svg";
+import first from "./assets/group-11382.svg";
+import second from "./assets/group-11383.svg";
+import third from "./assets/group-11376.svg";
 
-function Employers() {
+function universities() {
   return (
     <>
       <Hero
-        heading="‍Hiring made easy"
-        subHeading="FOR EMPLOYERS"
-        description="Recruit top talent for your company through universities and colleges by connecting with a network."
+        heading="‍Streamlined Campus Placements Drives"
+        subHeading="For universities"
+        description="Organise hassle-free digital campus placement drives for your universities and colleges."
         heroImage={HeroImage}
       />
       <Description
-        serviceTitle="Recruiting Made Simple"
-        serviceHeading="Campus Hiring and online Recruitment infrastructure"
+        serviceTitle="Placement drives made easy"
+        serviceHeading="Batch-wise Placement Drive and candidate management"
         serviceImage={serviceImage}
-        serviceImageAlt="employer service"
-        title="Employer Features"
-        heading="Automated Job Post and Interview Process"
+        serviceImageAlt="university service"
+        title="University Features"
+        heading="Automated and networked Placement System"
         contents={[
           {
             image: first,
             alt: "alt",
-            heading: "Evaluations on every Hiring round",
+            heading: "Invite candidates to groups",
             description:
-              "Hire candidates hassle-free by evaluating them based on their skills, and conducting interviews with multiple Interview panel members and members of the team.",
+              "Organize and manage your Placement Drive easily by inviting candidates and segmenting them into batches",
             width: "60%",
             padding: "0px",
             imageWidth: "100%",
@@ -38,9 +38,9 @@ function Employers() {
           {
             image: second,
             alt: "alt",
-            heading: "One - click Job Post",
+            heading: "Create campus drives ‍and share job posts",
             description:
-              "Create Job Posts with ease. Publish a personal career page for your company to share job postings easliy.",
+              "Easliy monitor student data with Campus Placement drives",
             width: "60%",
             padding: "0px",
             imageWidth: "100%",
@@ -50,9 +50,9 @@ function Employers() {
           {
             image: third,
             alt: "alt",
-            heading: "Set custom Configuration for Hiring",
+            heading: "Assess Student performance",
             description:
-              "Configurations customised to your job requirements to make it easier for interview panels to conduct interviews.",
+              "Evaluate students' interview skills and improve them by analyzing their performance during interviews",
             width: "60%",
             padding: "0px",
             imageWidth: "100%",
@@ -64,4 +64,4 @@ function Employers() {
   );
 }
 
-export default Employers;
+export default universities;

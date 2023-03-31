@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "../../../media/logo.svg";
 import "./styles.css";
 import Button from "../../shared/button";
 
 function Navbar() {
+  const location = useLocation();
+  let pathname = location.pathname;
   return (
     <nav className="navbar">
       <div className="nav-container mx-auto">
@@ -20,22 +22,40 @@ function Navbar() {
           <div className="d-flex ms-auto">
             <ul className="d-flex mb-0 pe-5 list-unstyled align-items-center">
               <li>
-                <Link to="/" className="nav-link first">
+                <Link
+                  to="/"
+                  className={`nav-link ${pathname === "/" ? "first" : ""}`}
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/for-employers" className="nav-link">
+                <Link
+                  to="/for-employers"
+                  className={`nav-link ${
+                    pathname === "/for-employers" ? "first" : ""
+                  }`}
+                >
                   Employers
                 </Link>
               </li>
               <li>
-                <Link to="/for-universities" className="nav-link">
+                <Link
+                  to="/for-universities"
+                  className={`nav-link ${
+                    pathname === "/for-universities" ? "first" : ""
+                  }`}
+                >
                   Universities
                 </Link>
               </li>
               <li>
-                <Link to="/for-candidates" className="nav-link">
+                <Link
+                  to="/for-candidates"
+                  className={`nav-link ${
+                    pathname === "/for-candidates" ? "first" : ""
+                  }`}
+                >
                   Candidates
                 </Link>
               </li>

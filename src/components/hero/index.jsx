@@ -22,7 +22,7 @@ const Hero = ({ heading, subHeading, description, heroImage }) => {
                 <Button
                   content="Watch Video"
                   link="https://youtu.be/axjp1bjy5eI"
-                  style={{ marginLeft: "22px" }}
+                  sx={{ marginLeft: "22px" }}
                 />
               </div>
             </div>

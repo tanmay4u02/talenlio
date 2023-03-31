@@ -45,11 +45,17 @@ const Description = ({
             }
             key={index}
           >
-            <div className="image-block">
+            <div
+              className="image-block"
+              style={{
+                padding: element.padding ? element.padding : "30px",
+                width: element.width ? element.width : "50%",
+              }}
+            >
               <img
                 src={element.image}
                 alt={element.alt}
-                width="315"
+                width={element.imageWidth ? element.imageWidth : "315"}
                 loading="lazy"
               />
             </div>

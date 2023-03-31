@@ -16,7 +16,9 @@ const Content = ({ index, heading, description, link, side }) => {
         )}
         <Heading>{heading}</Heading>
         <P variant="paragraph">{description}</P>
-        <Button content="Learn More" sx={{ display: "block" }} link={link} />
+        {link && (
+          <Button content="Learn More" sx={{ display: "block" }} link={link} />
+        )}
       </Wrap>
     </div>
   );

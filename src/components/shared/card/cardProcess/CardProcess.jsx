@@ -6,7 +6,7 @@ const CardProcess = ({ icon, heading, children, link }) => {
   return (
     <div className="card-process">
       <div className="process-icon">
-        <img src={icon} loading="lazy" />
+        <img src={icon} loading="lazy" alt="card icon" />
       </div>
       <div className="heading-large">{heading}</div>
       <P variant="paragraph-standard">{children}</P>

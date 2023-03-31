@@ -8,7 +8,7 @@ import EmployersIcon from "./assets/group-11375.svg";
 import UniversityIcon from "./assets/group-11374.svg";
 import CandidatesIcon from "./assets/group-11373.svg";
 
-const Description = () => {
+const Services = () => {
   return (
     <Section variant="section-blog">
       <Section variant="sub-section">
@@ -55,4 +55,4 @@ const Description = () => {
   );
 };
 
-export default Description;
+export default Services;

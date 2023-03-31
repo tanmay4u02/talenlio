@@ -40,6 +40,7 @@ function Home() {
               "Campus placement drives can be seamlessly managed by University and college placement centres, helping students to get placed at different companies",
             link: "/for-universities",
             side: "right",
+            marginBottom: "140px",
           },
           {
             image: CandidateImg,
@@ -49,6 +50,7 @@ function Home() {
             description:
               "Candidates can create their Resumes and Personal websites to showcase their skills and apply for open jobs and Campus placements.",
             link: "/for-candidates",
+            marginBottom: "0px",
           },
         ]}
       />

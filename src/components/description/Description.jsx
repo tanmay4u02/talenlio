@@ -37,11 +37,11 @@ const Description = ({
           <div
             className={`${index % 2 === 0 ? "column-wrap-reversed" : "d-flex"}`}
             style={
-              index % 2 === 0
-                ? {}
-                : {
-                    marginBottom: "140px",
+              element.marginBottom
+                ? {
+                    marginBottom: element.marginBottom,
                   }
+                : {}
             }
             key={index}
           >

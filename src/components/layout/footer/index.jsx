@@ -49,12 +49,12 @@ const Footer = () => {
         </div>
       </ContainerFooter>
       <div className="d-flex p-0 justify-content-between align-items-center">
-        <div class="text-block-3">
+        <div className="text-block-3">
           © Copyright 2023 All Rights Reserved | Powered by{" "}
           <a
             href="https://www.ilmtec.in/"
             target="_blank"
-            class="link-3"
+            className="link-3"
             rel="noreferrer"
           >
             <strong>ILMTEC</strong> Solutions

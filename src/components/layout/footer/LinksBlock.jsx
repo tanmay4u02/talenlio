@@ -3,7 +3,6 @@ import Heading from "../../shared/heading";
 import "./styles.css";
 
 const LinksBlock = ({ heading, links }) => {
-  console.log(links);
   return (
     <div className="div-block-12">
       <Heading variant="footer-heading">{heading}</Heading>

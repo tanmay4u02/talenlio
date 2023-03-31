@@ -1,9 +1,11 @@
-# Remaining Things (Components)
+### Remaining Things (Components)
 
 home last 3 sections
 
 plans component
+
 join waitlist section - last
+
 footer socials
 
 # Getting Started with Create React App

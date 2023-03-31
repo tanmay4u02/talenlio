@@ -1,6 +1,7 @@
 :root {
   --primary-color: #4891ff;
   --secondary-color: #ffc14f;
+  font-size: 14px;
 }
 
 body {

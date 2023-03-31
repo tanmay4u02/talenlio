@@ -20,7 +20,12 @@ const Description = () => {
         </Wrap>
         <div className="column-wrap-reversed">
           <div className="image-block">
-            <img src={EmployerImg} alt="employer descr-img" width="315" />
+            <img
+              src={EmployerImg}
+              alt="employer descr-img"
+              width="315"
+              loading="lazy"
+            />
           </div>
           <Content
             index="1"
@@ -31,7 +36,12 @@ const Description = () => {
         </div>
         <div className="d-flex" style={{ marginBottom: "140px" }}>
           <div className="image-block">
-            <img src={UniversityImg} alt="university descr-img" width="315" />
+            <img
+              src={UniversityImg}
+              alt="university descr-img"
+              width="315"
+              loading="lazy"
+            />
           </div>
           <Content
             index="2"
@@ -43,7 +53,12 @@ const Description = () => {
         </div>
         <div className="column-wrap-reversed" style={{ marginBottom: "0px" }}>
           <div className="image-block">
-            <img src={CandidateImg} alt="candidate descr-img" width="315" />
+            <img
+              src={CandidateImg}
+              alt="candidate descr-img"
+              width="315"
+              loading="lazy"
+            />
           </div>
           <Content
             index="3"

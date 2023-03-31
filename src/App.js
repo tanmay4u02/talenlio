@@ -5,6 +5,7 @@ import Employers from "./pages/employers";
 import Universities from "./pages/universities";
 import Candidates from "./pages/candidates";
 import NotFound from "./pages/notFound";
+import Footer from "./components/layout/footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/for-candidates" element={<Candidates />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

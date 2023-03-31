@@ -14,3 +14,14 @@
   font-weight: 600;
   text-align: center;
 }
+
+.footer-heading {
+  margin-top: 0;
+  margin-bottom: auto;
+  padding-bottom: 14px;
+  font-family: "Didact Gothic", sans-serif;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}

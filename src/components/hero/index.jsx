@@ -11,6 +11,7 @@ const Hero = ({ heading, subHeading, description, heroImage }) => {
         <div className="d-flex">
           <div className="hero-block">
             <div className="content-block-hero">
+              {subHeading && <P variant="title-page">{subHeading}</P>}
               <H1 content={heading} />
               <P variant="paragraph-hero">{description}</P>
               <div className="btn-wrap-hero">

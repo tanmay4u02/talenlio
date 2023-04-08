@@ -7,6 +7,7 @@ import serviceImage from "./assets/sdsa.svg";
 import first from "./assets/group-11382.svg";
 import second from "./assets/group-11383.svg";
 import third from "./assets/group-11376.svg";
+import PageConclusion from "../../components/layout/pageConclusion/PageConclusion";
 
 function universities() {
   return (
@@ -59,6 +60,12 @@ function universities() {
             marginBottom: "0px",
           },
         ]}
+      />
+      <PageConclusion
+        content="What are you waiting for?"
+        buttonText="Join waitlist"
+        boldContent="Let's get your placement cell online!"
+        buttonLink="https://app.talenlio.com/auth/user-type"
       />
     </>
   );

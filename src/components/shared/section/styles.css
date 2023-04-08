@@ -46,3 +46,17 @@
   align-items: center;
   text-align: left;
 }
+
+.section.cta-section-4 {
+  position: relative;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 140px 3%;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.08);
+  background-color: #111;
+  background-image: linear-gradient(150deg, #fff, #fff5da);
+  font-weight: 500;
+}

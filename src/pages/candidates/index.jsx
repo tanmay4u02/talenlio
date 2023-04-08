@@ -7,6 +7,7 @@ import serviceImage from "./assets/dsdfds.svg";
 import first from "./assets/frame-11521-p-800.png";
 import second from "./assets/group-11384.svg";
 import third from "./assets/group-11385.svg";
+import PageConclusion from "../../components/layout/pageConclusion/PageConclusion";
 
 function Candidates() {
   return (
@@ -59,6 +60,11 @@ function Candidates() {
             marginBottom: "0px",
           },
         ]}
+      />
+      <PageConclusion
+        content="Showcase talent and uncover opportunities!"
+        buttonText="Get Started"
+        buttonLink="https://app.talenlio.com/auth/login"
       />
     </>
   );

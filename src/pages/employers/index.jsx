@@ -7,6 +7,7 @@ import serviceImage from "./assets/frame-11604.svg";
 import first from "./assets/group-11376.svg";
 import second from "./assets/group-11378.svg";
 import third from "./assets/group-11380.svg";
+import PageConclusion from "../../components/layout/pageConclusion/PageConclusion";
 
 function Employers() {
   return (
@@ -59,6 +60,11 @@ function Employers() {
             marginBottom: "0px",
           },
         ]}
+      />
+      <PageConclusion
+        content="Explore the new way of hiring!"
+        buttonText="Join waitlist"
+        buttonLink="https://app.talenlio.com/auth/user-type"
       />
     </>
   );

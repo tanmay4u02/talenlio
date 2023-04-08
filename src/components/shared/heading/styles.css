@@ -25,3 +25,12 @@
   line-height: 1.5;
   font-weight: 500;
 }
+
+.h1-cta-4 {
+  margin-bottom: 22px;
+  font-family: Jost, sans-serif;
+  color: #1a3066;
+  font-size: 36px;
+  line-height: 64px;
+  font-weight: 300;
+}

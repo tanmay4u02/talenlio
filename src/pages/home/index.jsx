@@ -7,6 +7,7 @@ import Description from "../../components/description/Description";
 import EmployerImg from "./assets/job-offer.svg";
 import UniversityImg from "./assets/global-online-education.svg";
 import CandidateImg from "./assets/resume-writing-service.svg";
+import PageConclusion from "../../components/layout/pageConclusion/PageConclusion";
 
 function Home() {
   return (
@@ -53,6 +54,11 @@ function Home() {
             marginBottom: "0px",
           },
         ]}
+      />
+      <PageConclusion
+        content="Discover the place where Talent meets Opportunities!"
+        buttonText="Join waitlist"
+        buttonLink="https://app.talenlio.com/auth/user-type"
       />
     </>
   );

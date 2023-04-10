@@ -70,3 +70,16 @@
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+
+.secondary-small {
+  max-width: 490px;
+  font-family: "Didact Gothic", sans-serif;
+  color: #546681;
+  font-size: 20px;
+  line-height: 1.7;
+  font-style: normal;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 400;
+  text-align: center;
+}

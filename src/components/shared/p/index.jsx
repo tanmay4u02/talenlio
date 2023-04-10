@@ -1,8 +1,12 @@
 import React from "react";
 import "./styles.css";
 
-const P = ({ children, variant }) => {
-  return <p className={variant}>{children}</p>;
+const P = ({ children, variant, sx }) => {
+  return (
+    <p className={variant} style={sx}>
+      {children}
+    </p>
+  );
 };
 
 P.defaultProps = {

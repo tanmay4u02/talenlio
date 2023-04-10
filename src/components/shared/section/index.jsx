@@ -13,7 +13,7 @@ const Section = ({ children, variant }) => {
 };
 
 Section.defaultProps = {
-  variant: "content",
+  variant: "section-content",
 };
 
 export default Section;

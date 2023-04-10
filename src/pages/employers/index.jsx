@@ -2,12 +2,13 @@ import React from "react";
 import Hero from "../../components/hero";
 import HeroImage from "./assets/candidates.svg";
 import Description from "../../components/description/Description";
+import Plans from "../../components/pricing/plans";
+import PageConclusion from "../../components/layout/pageConclusion/PageConclusion";
 
 import serviceImage from "./assets/frame-11604.svg";
 import first from "./assets/group-11376.svg";
 import second from "./assets/group-11378.svg";
 import third from "./assets/group-11380.svg";
-import PageConclusion from "../../components/layout/pageConclusion/PageConclusion";
 
 function Employers() {
   return (
@@ -61,6 +62,7 @@ function Employers() {
           },
         ]}
       />
+      <Plans discountOnYearly={20} />
       <PageConclusion
         content="Explore the new way of hiring!"
         buttonText="Join waitlist"

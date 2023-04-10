@@ -63,7 +63,46 @@ function Employers() {
           },
         ]}
       />
-      <Plans discountOnYearly={20} monthly={monthly} setMonthly={setMonthly} />
+      <Plans
+        discountOnYearly={20}
+        monthly={monthly}
+        setMonthly={setMonthly}
+        plans={[
+          {
+            title: "Buisness",
+            price: 5,
+            priceAnually: 48,
+            benefits: [
+              "Publish up to 3 job posts",
+              "Connect up to 3 universities",
+              "Email support",
+              "Up to 3 users",
+            ],
+          },
+          {
+            title: "Growth",
+            price: "15",
+            priceAnually: "144",
+            popular: true,
+            popularText: "Save 20%",
+            benefits: [
+              "Publish up to 30 job posts",
+              "Connect up to 30 universities",
+              "Phone and email support from a dedicated team",
+              "Unlimited users",
+            ],
+          },
+          {
+            title: "Enterprise",
+            benefits: [
+              "Publish unlimited Job posts",
+              "Get connected with unlimited universities",
+              "Email support",
+              "Unlimited users",
+            ],
+          },
+        ]}
+      />
       <PageConclusion
         content="Explore the new way of hiring!"
         buttonText="Join waitlist"

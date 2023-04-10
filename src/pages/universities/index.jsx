@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Hero from "../../components/hero";
 import HeroImage from "./assets/global-online-education.svg";
 import Description from "../../components/description/Description";
@@ -8,8 +8,10 @@ import first from "./assets/group-11382.svg";
 import second from "./assets/group-11383.svg";
 import third from "./assets/group-11376.svg";
 import PageConclusion from "../../components/layout/pageConclusion/PageConclusion";
+import Plans from "../../components/pricing/plans";
 
-function universities() {
+function Universities() {
+  const [currency, setCurrency] = useState(1);
   return (
     <>
       <Hero
@@ -61,6 +63,46 @@ function universities() {
           },
         ]}
       />
+      <Plans
+        billedAnually
+        monthly={currency}
+        setMonthly={setCurrency}
+        plans={[
+          {
+            title: "Digital",
+            price: 60,
+            priceINR: 4900,
+            benefits: [
+              "Create up to 5 campus placement drives",
+              "Connect up to 5 employers",
+              "Up to 5 team members",
+              "Email support",
+            ],
+          },
+          {
+            title: "Pro",
+            price: 85,
+            priceAnually: 6900,
+            popular: true,
+            popularText: "Popular",
+            benefits: [
+              "Create up to 25 campus placement drives",
+              "Connect up to 15 employers",
+              "Up to 15 team members",
+              "Email support",
+            ],
+          },
+          {
+            title: "Legend",
+            benefits: [
+              "Create unlimited placement drives",
+              "Connect unlimited employers",
+              "Unlimited users",
+              "Premium support",
+            ],
+          },
+        ]}
+      />
       <PageConclusion
         content="What are you waiting for?"
         buttonText="Join waitlist"
@@ -71,4 +113,4 @@ function universities() {
   );
 }
 
-export default universities;
+export default Universities;

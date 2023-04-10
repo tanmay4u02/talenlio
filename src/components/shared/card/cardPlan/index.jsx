@@ -9,8 +9,10 @@ const CardPlan = ({
   popularText,
   price,
   priceAnually,
+  priceINR,
   monthly,
   benefits,
+  forCurrency,
 }) => {
   return (
     <div className={`card-pricing ${popular ? "popular" : "mt-4"}`}>
@@ -26,7 +28,8 @@ const CardPlan = ({
       >
         {price ? (
           <>
-            ${monthly ? price : priceAnually} <span>per user</span>
+            ${monthly ? price : priceINR ? priceINR : priceAnually}{" "}
+            <span>{forCurrency ? "monthly" : "per user"}</span>
           </>
         ) : (
           "Talk to us"

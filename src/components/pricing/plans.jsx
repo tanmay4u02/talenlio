@@ -7,7 +7,13 @@ import Heading from "../shared/heading";
 import Switch from "../shared/switch/Switch";
 import CardPlan from "../shared/card/cardPlan";
 
-const Plans = ({ discountOnYearly, billedAnually, monthly, setMonthly }) => {
+const Plans = ({
+  discountOnYearly,
+  billedAnually,
+  plans,
+  monthly,
+  setMonthly,
+}) => {
   return (
     <Section>
       <ContainerLarge>
@@ -32,47 +38,21 @@ const Plans = ({ discountOnYearly, billedAnually, monthly, setMonthly }) => {
           <Switch forCurrency={billedAnually} setMonthly={setMonthly} />
         </Container>
         <div className="row gx-4 gy-4">
-          <div className="col-lg-4 col-md-6">
-            <CardPlan
-              title="Business"
-              price="5"
-              priceAnually="48"
-              monthly={monthly}
-              benefits={[
-                "Publish up to 3 Job posts",
-                "Connect up to 3 universities",
-                "Email support",
-                "Up to 3 users",
-              ]}
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <CardPlan
-              title="Growth"
-              price="15"
-              priceAnually="144"
-              monthly={monthly}
-              popular
-              popularText="Save 20%"
-              benefits={[
-                "Publish up to 30 job posts",
-                "Connect up to 30 universities",
-                "Phone and email support from a dedicated team",
-                "Unlimited users",
-              ]}
-            />
-          </div>
-          <div className="col-lg-4 col-md-6">
-            <CardPlan
-              title="Enterprise"
-              benefits={[
-                "Publish unlimited Job posts",
-                "Get connected with unlimited universities",
-                "Email support",
-                "Unlimited users",
-              ]}
-            />
-          </div>
+          {plans.map((plan, ind) => (
+            <div className="col-lg-4 col-md-6" key={ind}>
+              <CardPlan
+                title={plan.title}
+                price={plan.price}
+                priceAnually={plan.priceAnually}
+                priceINR={plan.priceINR}
+                popular={plan.popular}
+                popularText={plan.popularText}
+                monthly={monthly}
+                benefits={plan.benefits}
+                forCurrency={billedAnually}
+              />
+            </div>
+          ))}
         </div>
       </ContainerLarge>
     </Section>

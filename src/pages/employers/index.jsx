@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Hero from "../../components/hero";
 import HeroImage from "./assets/candidates.svg";
 import Description from "../../components/description/Description";
@@ -11,6 +11,7 @@ import second from "./assets/group-11378.svg";
 import third from "./assets/group-11380.svg";
 
 function Employers() {
+  const [monthly, setMonthly] = useState(1);
   return (
     <>
       <Hero
@@ -62,7 +63,7 @@ function Employers() {
           },
         ]}
       />
-      <Plans discountOnYearly={20} />
+      <Plans discountOnYearly={20} monthly={monthly} setMonthly={setMonthly} />
       <PageConclusion
         content="Explore the new way of hiring!"
         buttonText="Join waitlist"

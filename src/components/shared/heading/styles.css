@@ -34,3 +34,11 @@
   line-height: 64px;
   font-weight: 300;
 }
+
+.title-plan {
+  margin-top: 4px;
+  font-family: Jost, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}

@@ -6,7 +6,11 @@ function Button({ content, link, variant, sx }) {
     <a
       href={link}
       className={`button first ${
-        variant === "primary" ? " bg-first third" : ""
+        variant === "primary"
+          ? " bg-first third"
+          : variant === "white"
+          ? "bg-third first"
+          : ""
       }`}
       target="_blank"
       rel="noreferrer"

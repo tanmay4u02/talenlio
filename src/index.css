@@ -33,6 +33,9 @@ code {
 .bg-second {
   background-color: var(--secondary-color) !important;
 }
+.bg-third {
+  background-color: #fff !important;
+}
 
 /* link style  */
 a {

@@ -1,6 +1,9 @@
 import P from "../p";
 
-const Switch = ({ forCurrency }) => {
+const Switch = ({ forCurrency, setMonthly }) => {
+  const onClick = () => {
+    setMonthly((prev) => !prev);
+  };
   return (
     <div className="d-flex justify-content-center align-items-center">
       <P
@@ -22,6 +25,7 @@ const Switch = ({ forCurrency }) => {
           type="checkbox"
           role="switch"
           style={{ cursor: "pointer" }}
+          onClick={onClick}
         />
       </span>
       <P

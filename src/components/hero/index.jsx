@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 import H1 from "../shared/h1";
 import P from "../shared/p";
@@ -6,6 +6,13 @@ import Button from "../shared/button";
 // import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Hero = ({ heading, subHeading, description, heroImage }) => {
+  const [animation, setAnimation] = useState("");
+  const handleMouseEnter = () => {
+    setAnimation("animate__animated animate__jello");
+  };
+  const handleMouseLeave = () => {
+    setAnimation("");
+  };
   return (
     <div className="hero">
       <div className="hero-container">
@@ -30,7 +37,13 @@ const Hero = ({ heading, subHeading, description, heroImage }) => {
             </div>
           </div>
           <div className="hero-image-wrap">
-            <img src={heroImage} className="hero-image" alt="job interview" />
+            <img
+              src={heroImage}
+              className={`hero-image ${animation}`}
+              alt="job interview"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            />
           </div>
         </div>
       </div>

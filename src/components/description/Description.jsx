@@ -8,6 +8,7 @@ import Content from "./Content";
 import "./styles.css";
 import ExampleImage from "../assets/rectangle-1684.svg";
 import Service from "./Service";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Description = ({
   serviceTitle,
@@ -45,27 +46,40 @@ const Description = ({
             }
             key={index}
           >
-            <div
-              className="image-block"
-              style={{
-                padding: element.padding ? element.padding : "30px",
-                width: element.width ? element.width : "50%",
-              }}
+            <AnimationOnScroll
+              animateIn={`${
+                index % 2 === 0 ? "animate__fadeInRight" : "animate__fadeInLeft"
+              }`}
+              animateOnce
             >
-              <img
-                src={element.image}
-                alt={element.alt}
-                width={element.imageWidth ? element.imageWidth : "315"}
-                loading="lazy"
+              <div
+                className="image-block"
+                style={{
+                  padding: element.padding ? element.padding : "30px",
+                }}
+              >
+                <img
+                  src={element.image}
+                  alt={element.alt}
+                  width={element.imageWidth ? element.imageWidth : "315"}
+                  loading="lazy"
+                />
+              </div>
+            </AnimationOnScroll>
+            <AnimationOnScroll
+              animateIn={`${
+                index % 2 === 0 ? "animate__fadeInLeft" : "animate__fadeInRight"
+              }`}
+              animateOnce
+            >
+              <Content
+                index={element.index ? element.index : undefined}
+                heading={element.heading}
+                description={element.description}
+                link={element.link}
+                side={element.side ? element.side : "left"}
               />
-            </div>
-            <Content
-              index={element.index ? element.index : undefined}
-              heading={element.heading}
-              description={element.description}
-              link={element.link}
-              side={element.side ? element.side : "left"}
-            />
+            </AnimationOnScroll>
           </div>
         ))}
         {/* <div className="column-wrap-reversed">

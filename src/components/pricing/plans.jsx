@@ -37,7 +37,7 @@ const Plans = ({
           </P>
           <Switch forCurrency={billedAnually} setMonthly={setMonthly} />
         </Container>
-        <div className="row gx-4 gy-4">
+        <div className="row gx-4 gy-4 justify-content-center">
           {plans.map((plan, ind) => (
             <div className="col-lg-4 col-md-6" key={ind}>
               <CardPlan

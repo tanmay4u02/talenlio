@@ -10,6 +10,7 @@ const CardPlan = ({
   price,
   priceAnually,
   priceINR,
+  priceDesc,
   monthly,
   benefits,
   forCurrency,
@@ -28,8 +29,14 @@ const CardPlan = ({
       >
         {price ? (
           <>
-            ${monthly ? price : priceINR ? priceINR : priceAnually}{" "}
-            <span>{forCurrency ? "monthly" : "per user"}</span>
+            {monthly
+              ? `$${price}`
+              : priceINR
+              ? `₹${priceINR}`
+              : `$${priceAnually}`}
+            <span>
+              {priceDesc ? priceDesc : forCurrency ? "monthly" : "per user"}
+            </span>
           </>
         ) : (
           "Talk to us"

@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Hero from "../../components/hero";
 import HeroImage from "./assets/resume-writing-service.svg";
 import Description from "../../components/description/Description";
+import PageConclusion from "../../components/layout/pageConclusion/PageConclusion";
+import Plans from "../../components/pricing/plans";
 
 import serviceImage from "./assets/dsdfds.svg";
 import first from "./assets/frame-11521-p-800.png";
 import second from "./assets/group-11384.svg";
 import third from "./assets/group-11385.svg";
-import PageConclusion from "../../components/layout/pageConclusion/PageConclusion";
 
 function Candidates() {
+  const [currency, setCurrency] = useState(1);
   return (
     <>
       <Hero
@@ -58,6 +60,40 @@ function Candidates() {
             padding: "0px",
             imageWidth: "100%",
             marginBottom: "0px",
+          },
+        ]}
+      />
+      <Plans
+        billedAnually
+        monthly={currency}
+        setMonthly={setCurrency}
+        plans={[
+          {
+            title: "Standout",
+            price: 2,
+            priceINR: 100,
+            benefits: [
+              "Create up to 1 resume",
+              "Create up to 1 cover letter",
+              "Create up to 1 website",
+              "Share resumes and cover letters online",
+              "Basic support (by email only)",
+            ],
+          },
+          {
+            title: "Professional",
+            price: 36,
+            priceINR: 2900,
+            priceDesc: "One-time pay for lifetime access",
+            popular: true,
+            popularText: "Best seller",
+            benefits: [
+              "Create unlimited resumes",
+              "Create unlimited cover letters",
+              "Create unlimited websites",
+              "Share resumes and cover letters, websites online",
+              "Premium support (by phone call & email)",
+            ],
           },
         ]}
       />

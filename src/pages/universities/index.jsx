@@ -82,7 +82,7 @@ function Universities() {
           {
             title: "Pro",
             price: 85,
-            priceAnually: 6900,
+            priceINR: 6900,
             popular: true,
             popularText: "Popular",
             benefits: [

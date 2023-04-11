@@ -51,9 +51,14 @@ const Description = ({
                 index % 2 === 0 ? "animate__fadeInRight" : "animate__fadeInLeft"
               }`}
               animateOnce
+              animatePreScroll={false}
             >
               <div
-                className="image-block"
+                className={`image-block animate__animated ${
+                  index % 2 === 0
+                    ? "animate__fadeInRight"
+                    : "animate__fadeInLeft"
+                }`}
                 style={{
                   padding: element.padding ? element.padding : "30px",
                 }}
@@ -71,7 +76,15 @@ const Description = ({
                 index % 2 === 0 ? "animate__fadeInLeft" : "animate__fadeInRight"
               }`}
               animateOnce
+              animatePreScroll={false}
             >
+              <div
+                className={`animate_animated${
+                  index % 2 === 0
+                    ? "animate__fadeInLeft"
+                    : "animate__fadeInRight"
+                }`}
+              ></div>
               <Content
                 index={element.index ? element.index : undefined}
                 heading={element.heading}
@@ -82,55 +95,6 @@ const Description = ({
             </AnimationOnScroll>
           </div>
         ))}
-        {/* <div className="column-wrap-reversed">
-          <div className="image-block">
-            <img
-              src={EmployerImg}
-              alt="employer descr-img"
-              width="315"
-              loading="lazy"
-            />
-          </div>
-          <Content
-            index="1"
-            heading="Employer creates Jobs"
-            description="Talenlio enables companies to recruit top talent by creating jobs, managing interviews and connecting with colleges and universities."
-            link="/for-employers"
-          />
-        </div>
-        <div className="d-flex" style={{ marginBottom: "140px" }}>
-          <div className="image-block">
-            <img
-              src={UniversityImg}
-              alt="university descr-img"
-              width="315"
-              loading="lazy"
-            />
-          </div>
-          <Content
-            index="2"
-            heading="Universities manage campus drives"
-            description="Campus placement drives can be seamlessly managed by University and college placement centres, helping students to get placed at different companies"
-            link="/for-universities"
-            side="right"
-          />
-        </div>
-        <div className="column-wrap-reversed" style={{ marginBottom: "0px" }}>
-          <div className="image-block">
-            <img
-              src={CandidateImg}
-              alt="candidate descr-img"
-              width="315"
-              loading="lazy"
-            />
-          </div>
-          <Content
-            index="3"
-            heading="Candidates can apply for jobs"
-            description="Candidates can create their Resumes and Personal websites to showcase their skills and apply for open jobs and Campus placements."
-            link="/for-candidates"
-          />
-        </div> */}
       </ContainerBg>
     </Section>
   );

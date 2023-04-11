@@ -3,12 +3,13 @@ import "./styles.css";
 import H1 from "../shared/h1";
 import P from "../shared/p";
 import Button from "../shared/button";
+// import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Hero = ({ heading, subHeading, description, heroImage }) => {
   return (
     <div className="hero">
       <div className="hero-container">
-        <div className="d-flex">
+        <div className="d-flex animate__animated animate__fadeInDown">
           <div className="hero-block">
             <div className="content-block-hero">
               {subHeading && <P variant="title-page">{subHeading}</P>}

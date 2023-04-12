@@ -60,3 +60,22 @@
   background-image: linear-gradient(150deg, #fff, #fff5da);
   font-weight: 500;
 }
+
+.section.section-ow {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding: 144px 3%;
+  align-items: center;
+  background-color: #4891ff;
+  background-image: linear-gradient(106deg, #d6e8ff, #fff5da);
+}
+
+.section.section-w {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding: 144px 3%;
+  align-items: center;
+  background-color: #fefeff;
+}

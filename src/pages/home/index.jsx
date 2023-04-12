@@ -3,11 +3,15 @@ import Hero from "../../components/hero";
 import HeroImage from "./assets/job-interview.svg";
 import Services from "./Services";
 import Description from "../../components/description/Description";
+import PreviewService from "./PreviewService";
+import PageConclusion from "../../components/layout/pageConclusion/PageConclusion";
 
 import EmployerImg from "./assets/job-offer.svg";
 import UniversityImg from "./assets/global-online-education.svg";
 import CandidateImg from "./assets/resume-writing-service.svg";
-import PageConclusion from "../../components/layout/pageConclusion/PageConclusion";
+import UniversityPreview from "./assets/group-11383.svg";
+import EmployerPreview from "./assets/group-11354.svg";
+import CandidatePreview from "./assets/group-11364.svg";
 
 function Home() {
   return (
@@ -53,6 +57,38 @@ function Home() {
             link: "/for-candidates",
             marginBottom: "0px",
           },
+        ]}
+      />
+      <PreviewService
+        align="left"
+        previewImage={UniversityPreview}
+        title="Universities"
+        features={[
+          "Seamless Campus Placements",
+          "Batch-wise Candidate management",
+          "Candidate placement data and Job",
+          "Evaluation records",
+        ]}
+      />
+      <PreviewService
+        section="w"
+        align="right"
+        previewImage={EmployerPreview}
+        title="Employers"
+        features={[
+          "Streamlined Hiring Process",
+          "Easy Workflows and Virtual Interviews",
+          "Evaluations and Automated HR Documentation process",
+        ]}
+      />
+      <PreviewService
+        align="left"
+        previewImage={CandidatePreview}
+        title="Candidates"
+        features={[
+          "Personal Website",
+          "Modern Resume templates in Web and PDF mode",
+          "Easily apply for Jobs and Campus Placement drives",
         ]}
       />
       <PageConclusion

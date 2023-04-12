@@ -1,3 +1,19 @@
+### Remaining Things (Components)
+
+home last 3 sections
+
+plans component
+
+join waitlist section - last
+
+footer socials
+
+Responsiveness
+
+Animations
+
+Scrollbar
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

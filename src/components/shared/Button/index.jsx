@@ -14,7 +14,7 @@ function Button({ content, link, variant, sx }) {
       }`}
       target="_blank"
       rel="noreferrer"
-      style={sx}
+      style={{ transition: "all 0.3s ease-in-out", ...sx }}
     >
       {content}
     </a>

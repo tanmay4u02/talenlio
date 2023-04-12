@@ -42,7 +42,8 @@ const Hero = ({ heading, subHeading, description, heroImage }) => {
               className={`hero-image ${animation}`}
               alt="job interview"
               onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
+              // onMouseLeave={handleMouseLeave}
+              onAnimationEnd={handleMouseLeave}
             />
           </div>
         </div>

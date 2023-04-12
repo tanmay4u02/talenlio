@@ -37,7 +37,9 @@ const PreviewService = ({ section, align, previewImage, title, features }) => {
             <div className="">
               <P variant="title-content">{title}</P>
               {features.map((feature, ind) => (
-                <h3 className="heading-5">- {feature}</h3>
+                <h3 className="heading-5" key={ind}>
+                  - {feature}
+                </h3>
               ))}
             </div>
           </AnimationOnScroll>

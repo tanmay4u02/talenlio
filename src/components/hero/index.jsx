@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./styles.css";
 import H1 from "../shared/h1";
 import P from "../shared/p";
@@ -6,6 +6,9 @@ import Button from "../shared/button";
 // import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Hero = ({ heading, subHeading, description, heroImage }) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   const [animation, setAnimation] = useState("");
   const handleMouseEnter = () => {
     setAnimation("animate__animated animate__jello");

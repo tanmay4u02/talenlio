@@ -16,17 +16,23 @@ const PreviewService = ({ section, align, previewImage, title, features }) => {
           }`}
         >
           <div style={{ width: "80%", height: "530px" }}>
-            <img
-              src={previewImage}
-              alt="preview"
-              style={{ width: "100%", height: "100%", objectFit: "cover" }}
-            />
+            <AnimationOnScroll
+              animateIn="animate__fadeIn"
+              animateOnce
+              style={{ width: "100%", height: "100%" }}
+            >
+              <img
+                src={previewImage}
+                alt="preview"
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            </AnimationOnScroll>
           </div>
           <AnimationOnScroll
-            animateIn="animate__fadeInRight"
+            animateIn={`animate__fadeIn${align === "left" ? "Right" : "Left"}`}
             animateOnce
             className="content-square-1 "
-            style={{ [align === "left" ? "right" : "left"]: "0" }}
+            style={{ [align === "left" ? "right" : "left"]: "0", top: "7rem" }}
           >
             <div className="">
               <P variant="title-content">{title}</P>

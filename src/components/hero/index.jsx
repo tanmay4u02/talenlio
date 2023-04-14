@@ -3,7 +3,6 @@ import "./styles.css";
 import H1 from "../shared/h1";
 import P from "../shared/p";
 import Button from "../shared/button";
-// import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const Hero = ({ heading, subHeading, description, heroImage }) => {
   useEffect(() => {

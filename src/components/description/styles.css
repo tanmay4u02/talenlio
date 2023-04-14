@@ -29,3 +29,23 @@
 .content-block.right {
   padding: 25px 25px 25px 55px;
 }
+
+@media only screen and (max-width: 990px) {
+  .column-wrap-reversed,
+  .column-wrap {
+    flex-direction: column;
+    margin-bottom: 80px !important;
+  }
+  .image-block img {
+    max-width: 80%;
+  }
+  .content-block {
+    padding: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .image-block {
+    padding: 2px !important;
+  }
+}

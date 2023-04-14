@@ -36,7 +36,9 @@ const Description = ({
         </Wrap>
         {contents.map((element, index) => (
           <div
-            className={`${index % 2 === 0 ? "column-wrap-reversed" : "d-flex"}`}
+            className={`${
+              index % 2 === 0 ? "column-wrap-reversed" : "d-flex column-wrap"
+            }`}
             style={
               element.marginBottom
                 ? {

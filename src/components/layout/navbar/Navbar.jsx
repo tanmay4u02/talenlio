@@ -2,10 +2,24 @@ import { Link, useLocation } from "react-router-dom";
 import Logo from "../../../media/logo.svg";
 import "./styles.css";
 import Button from "../../shared/button";
+import { useEffect } from "react";
 
 function Navbar() {
   const location = useLocation();
   let pathname = location.pathname;
+
+  const handleHamburgerClick = () => {
+    const collapseNavbar = document.querySelector(".collapse-nav");
+    const hamburger = document.querySelector(".hamburger");
+    collapseNavbar.classList.toggle("active");
+    hamburger.classList.toggle("active");
+  };
+
+  useEffect(() => {
+    const collapseNavbar = document.querySelector(".collapse-nav");
+    collapseNavbar.classList.remove("active");
+  });
+
   return (
     <nav className="navbar">
       <div className="nav-container mx-auto">
@@ -19,8 +33,13 @@ function Navbar() {
               />
             </Link>
           </div>
-          <div className="d-flex ms-auto">
-            <ul className="d-flex mb-0 pe-5 list-unstyled align-items-center">
+          <div className="hamburger" onClick={handleHamburgerClick}>
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+          </div>
+          <div className="collapse-nav">
+            <ul className="list-unstyled">
               <li>
                 <Link
                   to="/"

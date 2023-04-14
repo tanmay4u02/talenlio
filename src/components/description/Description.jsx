@@ -56,11 +56,7 @@ const Description = ({
               animatePreScroll={false}
             >
               <div
-                className={`image-block animate__animated ${
-                  index % 2 === 0
-                    ? "animate__fadeInRight"
-                    : "animate__fadeInLeft"
-                }`}
+                className={`image-block `}
                 style={{
                   padding: element.padding ? element.padding : "30px",
                 }}
@@ -69,6 +65,9 @@ const Description = ({
                   src={element.image}
                   alt={element.alt}
                   width={element.imageWidth ? element.imageWidth : "315"}
+                  className={
+                    element.imageWidth ? "" : "home-description-content"
+                  }
                   loading="lazy"
                 />
               </div>
@@ -80,13 +79,6 @@ const Description = ({
               animateOnce
               animatePreScroll={false}
             >
-              <div
-                className={`animate_animated${
-                  index % 2 === 0
-                    ? "animate__fadeInLeft"
-                    : "animate__fadeInRight"
-                }`}
-              ></div>
               <Content
                 index={element.index ? element.index : undefined}
                 heading={element.heading}

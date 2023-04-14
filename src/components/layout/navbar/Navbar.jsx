@@ -18,6 +18,8 @@ function Navbar() {
   useEffect(() => {
     const collapseNavbar = document.querySelector(".collapse-nav");
     collapseNavbar.classList.remove("active");
+    const hamburger = document.querySelector(".hamburger");
+    hamburger.classList.remove("active");
   });
 
   return (

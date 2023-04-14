@@ -87,3 +87,8 @@
     padding-bottom: 62px !important;
   }
 }
+@media only screen and (max-width: 480px) {
+  .section.section-content {
+    padding: 120px 3% 64px;
+  }
+}

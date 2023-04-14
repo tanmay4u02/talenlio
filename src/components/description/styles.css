@@ -14,10 +14,6 @@
   flex-direction: row-reverse;
 }
 
-.descr-img {
-  max-width: 80%;
-}
-
 .content-block {
   display: flex;
   min-height: 350px;
@@ -36,11 +32,10 @@
     flex-direction: column;
     margin-bottom: 80px !important;
   }
-  .image-block img {
-    max-width: 80%;
-  }
   .content-block {
     padding: 10px !important;
+    min-height: unset;
+    justify-content: center;
   }
   .description-service-image {
     width: 90%;
@@ -50,5 +45,15 @@
 @media only screen and (max-width: 480px) {
   .image-block {
     padding: 2px !important;
+    min-height: unset;
+  }
+  .description-service-image {
+    width: 100%;
+  }
+  .image-block img {
+    width: 100%;
+  }
+  .home-description-content {
+    width: 70% !important;
   }
 }

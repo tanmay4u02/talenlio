@@ -22,3 +22,12 @@
   line-height: 30px;
   margin-top: 20px;
 }
+
+@media only screen and (max-width: 990px) {
+  .preview-content-wrap {
+    flex-direction: column;
+  }
+  .content-square-1 {
+    position: unset;
+  }
+}

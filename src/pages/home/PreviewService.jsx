@@ -11,11 +11,11 @@ const PreviewService = ({ section, align, previewImage, title, features }) => {
     <Section variant={`section-${section}`}>
       <Container className="container-1201">
         <div
-          className={`d-flex align-items-center ${
+          className={`d-flex align-items-center preview-content-wrap ${
             align === "right" ? "justify-content-end" : ""
           }`}
         >
-          <div style={{ width: "80%", height: "530px" }}>
+          <div style={{ width: "80%" }}>
             <AnimationOnScroll
               animateIn="animate__fadeIn"
               animateOnce
@@ -32,7 +32,7 @@ const PreviewService = ({ section, align, previewImage, title, features }) => {
             animateIn={`animate__fadeIn${align === "left" ? "Right" : "Left"}`}
             animateOnce
             className="content-square-1 "
-            style={{ [align === "left" ? "right" : "left"]: "0", top: "7rem" }}
+            style={{ [align === "left" ? "right" : "left"]: "0" }}
           >
             <div className="">
               <P variant="title-content">{title}</P>

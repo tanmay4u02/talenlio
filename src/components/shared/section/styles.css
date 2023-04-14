@@ -79,3 +79,11 @@
   align-items: center;
   background-color: #fefeff;
 }
+
+@media only screen and (max-width: 990px) {
+  .section-w,
+  .section-ow {
+    padding-top: 62px !important;
+    padding-bottom: 62px !important;
+  }
+}

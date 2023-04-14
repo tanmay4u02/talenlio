@@ -48,7 +48,7 @@ const Footer = () => {
           />
         </div>
       </ContainerFooter>
-      <div className="d-flex p-0 justify-content-between align-items-center">
+      <div className="d-flex p-0 justify-content-between align-items-center company-info">
         <div className="text-block-3">
           © Copyright 2023 All Rights Reserved | Powered by{" "}
           <a
@@ -60,6 +60,31 @@ const Footer = () => {
             <strong>ILMTEC</strong> Solutions
           </a>
           Private Limited
+        </div>
+        <div className="footer-content-wrapper">
+          <div className="footer-social-row">
+            <a
+              href="https://www.linkedin.com/company/talenlio/"
+              target="_blank"
+              rel="noreferrer"
+              className="footer-social-link-2"
+            >
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/96f41bdb71863c04b1d14057d9dd6e7aba8e1676/fa42b/images/bi_linkedin.svg"
+                loading="lazy"
+                width="22"
+                alt="Showcase talents and uncover opportunities"
+              />
+            </a>
+            <a href="/" className="footer-social-link-2 w-inline-block">
+              <img
+                src="https://d33wubrfki0l68.cloudfront.net/c4a307a5c328d7451b80854ece843ca09b99b64b/6c7ea/images/dashicons_email.svg"
+                loading="lazy"
+                width="26"
+                alt="Showcase talents and uncover opportunities"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -42,6 +42,9 @@
   .content-block {
     padding: 10px !important;
   }
+  .description-service-image {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 480px) {

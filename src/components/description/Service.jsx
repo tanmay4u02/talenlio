@@ -15,6 +15,7 @@ const Service = ({ title, heading, serviceImage, imageAlt }) => (
       <P variant="title">{title}</P>
       <Heading variant="heading-primary h3-center">{heading}</Heading>
       <img
+        className="description-service-image"
         src={serviceImage}
         loading="lazy"
         width="771"

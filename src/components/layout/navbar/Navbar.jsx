@@ -38,7 +38,7 @@ function Navbar() {
             <div className="line"></div>
             <div className="line"></div>
           </div>
-          <div className="collapse-nav">
+          <div className="collapse-nav" id="tm">
             <ul className="list-unstyled">
               <li>
                 <Link

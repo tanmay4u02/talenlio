@@ -1,18 +1,18 @@
 ### Remaining Things (Components)
 
-home last 3 sections
+home last 3 sections - done
 
-plans component
+plans component - done
 
-join waitlist section - last
+join waitlist section - done
 
-footer socials
+footer socials - done
 
-Responsiveness
+Responsiveness - done
 
-Animations
+Animations - done
 
-Scrollbar
+Scrollbar - done
 
 # Getting Started with Create React App
 
